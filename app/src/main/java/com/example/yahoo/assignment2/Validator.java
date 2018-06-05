@@ -1,7 +1,7 @@
 package com.example.yahoo.assignment2;
 
 public class Validator {
-    public static int Stage1(String input) {
+    public static int Stage2(String input) {
         int rule = 0;
 
         for(int i = 0; i<input.length();i++) {//check if you have a uppercase letter
