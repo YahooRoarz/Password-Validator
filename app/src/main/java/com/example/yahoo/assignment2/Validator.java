@@ -1,8 +1,20 @@
 package com.example.yahoo.assignment2;
 
-public class Validator {
-    public static int Stage1(String input) {
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.EditText;
+import android.os.Bundle;
+
+public class Validator{
+    public static int Stage3(String input) {
         int rule = 0;
+
+        if(input.length()>=8){
+            //length is greater than 8
+            rule++;
+        }
 
         for(int i = 0; i<input.length();i++) {//check if you have a uppercase letter
             if (input.charAt(i)>='A' && input.charAt(i)<='Z') {
